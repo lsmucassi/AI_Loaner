@@ -1,0 +1,43 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#import Libraries\n",
+    "import pandas as pd\n",
+    "import numpy as numpy\n",
+    "from sklearn.model_selection import train_test_split\n",
+    "from sklearn.metrics import accuracy_score, confusion_matrix\n",
+    "from imblearn.over_sampling import SMOTE\n",
+    "from sklearn.preprocessing import MinMaxScaler\n",
+    "import warnings\n",
+    "from collections import Counter\n",
+    "warnings.filterwarnings('ignore')\n",
+    "import seaborn as sns\n",
+    "import matplotlib.pyplot as pyplot\n",
+    "from keras import Sequential\n",
+    "from keras.layers import Dense"
+   ]
+  }
+ ]
+}
