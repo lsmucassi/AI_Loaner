@@ -10,16 +10,20 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": 3
+   "version": "3.8.3-final"
   },
-  "orig_nbformat": 2
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1600171974743",
+   "display_name": "Python 3.8.3 64-bit ('base': conda)"
+  }
  },
  "nbformat": 4,
  "nbformat_minor": 2,
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 14,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -37,6 +41,20 @@
     "import matplotlib.pyplot as pyplot\n",
     "from keras import Sequential\n",
     "from keras.layers import Dense"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df = pd.read_csv('bankloan.csv')\n",
+    "df = df.dropna()\n",
+    "df.isna().any()\n",
+    "df = df.drop('Load_ID', axis=1)\n",
+    "df['LoanAmount'] = (df['LoanAmount']*1000).astype(int)\n",
+    "Counter(df['Loan_Status']) #['Y']/df['Loan_Status'].size"
    ]
   }
  ]
